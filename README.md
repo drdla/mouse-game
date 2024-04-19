@@ -6,7 +6,7 @@ Writing a small program with my son where a mouse learns to navigate a field, av
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-It is deployed to GitHub pages on drdla.github.io/mouse-game
+It is deployed to GitHub pages on [drdla.github.io/mouse-game](https://drdla.github.io/mouse-game/)
 
 ## Getting Started
 

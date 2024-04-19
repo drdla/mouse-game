@@ -23,14 +23,14 @@ export default function Home() {
   }
 
   return (
-    <main className="flex flex-col min-h-screen items-center justify-between p-24">
-      <div className="flex gap-8 items-center">
-        <button onClick={handleMoveThroughField} className="rounded-md bg-blue-600 px-4 py-2">
+    <main className="flex flex-col min-h-screen gap-y-4 items-center p-4 md:p-24">
+      <div className="flex flex-col md:flex-row gap-x-8 items-center">
+        <button onClick={handleMoveThroughField} className="rounded-md bg-blue-600 px-4 py-2 whitespace-nowrap">
           Start Mouse Game
         </button>
         <p>Game took {counter} moves</p>
       </div>
-      <div className="flex flex-col bg-gray-900 border border-gray-700 divide-y">
+      <div className="flex flex-col bg-gray-900 border border-gray-700 divide-y max-w-full">
         {field.map((row, rowIndex) => (
           <div key={rowIndex} className="flex divide-x border-inherit">
             {row.map((col, colIndex) => {
@@ -41,7 +41,7 @@ export default function Home() {
               return (
                 <div
                   key={colIndex}
-                  className="flex size-16 justify-center items-center text-4xl border-inherit text-center">
+                  className="flex size-8 md:size-16 justify-center items-center md:text-4xl border-inherit text-center">
                   {cellIsCheeseCell ? '🧀' : ''}
                   {cellIsCatCell ? '🐈' : ''}
                   {cellIsMouseCell ? '🐭' : ''}
